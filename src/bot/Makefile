@@ -34,7 +34,7 @@ OBJS := $(SRC:%.c=$(OBJDIR)/%.o)
 # your bot executable's name
 MAIN := myBot
 # your bot config file
-CONF := mybot_config.json
+CONF := ../../../mybot_config.json
 
 # -O0 no optimization
 # -Wall emit 'all' warnings

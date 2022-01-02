@@ -12,7 +12,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg);
 
 int main(void) {
 
-    struct discord *client = discord_config_init("./mybot_config.json");
+    struct discord *client = discord_config_init("./../../../mybot_config.json");
 
     discord_set_on_ready(client, &on_ready);
 
