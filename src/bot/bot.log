@@ -1,9 +1,15 @@
-14:14:04|[90m1310562112[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:242:[0m [DISCORD_HTTP] [null] Couldn't match known buckets to ':1:users:@me'
-14:14:05|[90m1310562112[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:188:[0m [DISCORD_HTTP] [miss] Match ':1:users:@me' to bucket
-14:14:05|[90m1310562112[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [miss] Remaining = 1 | Reset = 0
-14:14:05|[90m1310562112[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:242:[0m [DISCORD_HTTP] [null] Couldn't match known buckets to ':1:gateway:bot'
-14:14:05|[90m1310562112[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:188:[0m [DISCORD_HTTP] [41f9] Match ':1:gateway:bot' to bucket
-14:14:05|[90m1310562112[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [41f9] Remaining = 1 | Reset = 1641132850078
-14:14:09|[90m1310562112[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:242:[0m [DISCORD_HTTP] [null] Couldn't match known buckets to ':2:channels:924731279893729280:messages'
-14:14:09|[90m1310562112[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:188:[0m [DISCORD_HTTP] [a06d] Match ':2:channels:924731279893729280:messages' to bucket
-14:14:09|[90m1310562112[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [a06d] Remaining = 4 | Reset = 1641132854560
+14:21:57|[90m3127048000[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:242:[0m [DISCORD_HTTP] [null] Couldn't match known buckets to ':1:users:@me'
+14:21:57|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:188:[0m [DISCORD_HTTP] [miss] Match ':1:users:@me' to bucket
+14:21:57|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [miss] Remaining = 1 | Reset = 0
+14:21:57|[90m3127048000[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:242:[0m [DISCORD_HTTP] [null] Couldn't match known buckets to ':1:gateway:bot'
+14:21:57|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:188:[0m [DISCORD_HTTP] [41f9] Match ':1:gateway:bot' to bucket
+14:21:57|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [41f9] Remaining = 1 | Reset = 1641133322960
+14:22:01|[90m3127048000[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:242:[0m [DISCORD_HTTP] [null] Couldn't match known buckets to ':2:channels:924731279893729280:messages'
+14:22:01|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:188:[0m [DISCORD_HTTP] [a06d] Match ':2:channels:924731279893729280:messages' to bucket
+14:22:01|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [a06d] Remaining = 4 | Reset = 1641133326215
+14:22:04|[90m3127048000[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:236:[0m [DISCORD_HTTP] [a06d] Found a bucket match for ':2:channels:924731279893729280:messages'!
+14:22:04|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [a06d] Remaining = 3 | Reset = 1641133326208
+14:22:05|[90m3127048000[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:236:[0m [DISCORD_HTTP] [a06d] Found a bucket match for ':2:channels:924731279893729280:messages'!
+14:22:05|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [a06d] Remaining = 2 | Reset = 1641133326198
+14:22:08|[90m3127048000[0m [94mTRACE[0m [90mdiscord-adapter-ratelimit.c:236:[0m [DISCORD_HTTP] [a06d] Found a bucket match for ':2:channels:924731279893729280:messages'!
+14:22:08|[90m3127048000[0m [36mDEBUG[0m [90mdiscord-adapter-ratelimit.c:306:[0m [DISCORD_HTTP] [a06d] Remaining = 4 | Reset = 1641133333982
