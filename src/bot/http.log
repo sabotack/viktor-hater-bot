@@ -1,0 +1,615 @@
+HTTP_SEND_GET [USER_AGENT #TID2544035648] - 2022-01-2T13:57:01.271Z - https://discord.com/api/v9/users/@me
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+
+@@@_1_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:01.425Z - https://discord.com/api/v9/users/@me
+Date: Sun, 02 Jan 2022 13:57:01 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 6c747e7b6cbd1039-ATL
+Set-Cookie: __dcfduid=db3d77376bd311ec978342010a0a0282; Expires=Fri, 01-Jan-2027 13:57:01 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Via: 1.1 google
+CF-Cache-Status: DYNAMIC
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __sdcfduid=db3d77376bd311ec978342010a0a0282ce1866997aa5dfefbedc678ab14c36a38232fb1c7a9d28cd9212b2a6dbcbbe8e; Expires=Fri, 01-Jan-2027 13:57:01 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+X-Content-Type-Options: nosniff
+x-envoy-upstream-service-time: 19
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=uMM4epj%2FVEDxpn7nyUSNnThXHuus7vvGxks9xkUQ39EGHN1CAHCyXG%2Fkpcnw80MzBCQMqt2lVkAGsqEXNvfRMk49C%2BgbzbR3rZ15Fu3VdgwuYCEC%2FZgtUawWBKIG"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+
+{"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "flags": 0, "bot": true, "banner": null, "banner_color": null, "accent_color": null, "bio": "", "locale": "en-US", "mfa_enabled": true, "email": null, "verified": true}
+@@@_2_@@@
+HTTP_SEND_GET [USER_AGENT #TID2544035648] - 2022-01-2T13:57:01.425Z - https://discord.com/api/v9/gateway/bot
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+
+@@@_3_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:01.494Z - https://discord.com/api/v9/gateway/bot
+Date: Sun, 02 Jan 2022 13:57:01 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=dbb907d16bd311ec8a0542010a0a04bc; Expires=Fri, 01-Jan-2027 13:57:01 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=dbb907d16bd311ec8a0542010a0a04bc69a704d5bd99632ee37b382dcd5ad667baf246eca3803eb77fb71e3b34d773b7; Expires=Fri, 01-Jan-2027 13:57:01 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: 41f9cd5d28af77da04563bcb1d67fdfd
+x-ratelimit-limit: 2
+x-ratelimit-remaining: 1
+x-ratelimit-reset: 1641131826.461
+x-ratelimit-reset-after: 5.000
+x-envoy-upstream-service-time: 29
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F4516sXuSdBjzKbJB0bOUSyz0q4qg5qF2QxlpOI8c92nErPdcUA8i7PZ3xmyKwRmryd6nXatPGq%2F2Rbh%2F%2Fs66oJKf0OVTh0zC7d4Gq9fibsg4qnJ7j69qAlv6DcY"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747e7bfd761039-ATL
+
+{"url": "wss://gateway.discord.gg", "shards": 1, "session_start_limit": {"total": 1000, "remaining": 953, "reset_after": 5588918, "max_concurrency": 1}}
+@@@_4_@@@
+WS_RCV_CONNECT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.582Z - wss://gateway.discord.gg/?v=9&encoding=json
+
+@@@_5_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.582Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":null,"s":null,"op":10,"d":{"heartbeat_interval":41250,"_trace":["[\"gateway-prd-main-3stg\",{\"micros\":0.0}]"]}}
+@@@_6_@@@
+WS_SEND_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.582Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"op":2,"d":{"token":"OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ","properties":{"$os":"POSIX","$browser":"orca","$device":"orca"},"compress":false,"large_threshold":0,"guild_subscriptions":false,"presence":{"since":"2022-01-2T13:57:01.268Z","status":"online","afk":false},"intents":4608}}
+@@@_7_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.687Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"READY","s":1,"op":0,"d":{"v":9,"user_settings":{},"user":{"verified":true,"username":"viktor hater","mfa_enabled":true,"id":"924302542983278602","flags":0,"email":null,"discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"session_id":"274d74854508f2251b1dbd79e57c89f2","relationships":[],"private_channels":[],"presences":[],"guilds":[{"unavailable":true,"id":"774344811179933706"},{"unavailable":true,"id":"924731053690736640"}],"guild_join_requests":[],"geo_ordered_rtc_regions":["atlanta","us-east","newark","us-central","us-south"],"application":{"id":"924302542983278602","flags":262144},"_trace":["[\"gateway-prd-main-3stg\",{\"micros\":79838,\"calls\":[\"discord-sessions-blue-prd-2-141\",{\"micros\":72340,\"calls\":[\"start_session\",{\"micros\":49301,\"calls\":[\"api-prd-main-wj28\",{\"micros\":37223,\"calls\":[\"get_user\",{\"micros\":3930},\"add_authorized_ip\",{\"micros\":1255},\"get_guilds\",{\"micros\":4255},\"coros_wait\",{\"micros\":1}]}]},\"guilds_connect\",{\"micros\":2,\"calls\":[]},\"presence_connect\",{\"micros\":4304,\"calls\":[]}]}]}]"]}}
+@@@_8_@@@
+WS_SEND_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.687Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"op":1,"d":1}
+@@@_9_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.688Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"GUILD_MEMBER_UPDATE","s":2,"op":0,"d":{"user":{"username":"viktor hater","id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"roles":["926960308373827605"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:09:19.639577+00:00","hoisted_role":null,"guild_id":"774344811179933706","deaf":false,"communication_disabled_until":null,"avatar":null}}
+@@@_10_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.688Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"GUILD_MEMBER_UPDATE","s":3,"op":0,"d":{"user":{"username":"viktor hater","id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"guild_id":"924731053690736640","deaf":false,"communication_disabled_until":null,"avatar":null}}
+@@@_11_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:01.743Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":null,"s":null,"op":11,"d":null}
+@@@_12_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:06.194Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":4,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:06.170000+00:00","referenced_message":null,"pinned":false,"nonce":"927198825263661056","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198824030699570","flags":0,"embeds":[],"edited_timestamp":null,"content":"hey viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_13_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:06.194Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor? xdddd"}
+@@@_14_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:06.308Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=de23507a6bd311ec87dc42010a0a0748; Expires=Fri, 01-Jan-2027 13:57:06 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=de23507a6bd311ec87dc42010a0a0748e62633e6d584759cae1387388a101306ae7138feccf7b68522b60635eed18964; Expires=Fri, 01-Jan-2027 13:57:06 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 4
+x-ratelimit-reset: 1641131831.226
+x-ratelimit-reset-after: 5.000
+x-envoy-upstream-service-time: 77
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Mr%2B%2BZ5PxWKkXq0s0YHZBLd04xUR5rwlYGKnXEqeRjSXwju8MQ91t%2B38GvZPgtBdW98rPbjBiK20dC8N8OEJjMrvN%2F3i8vLqIaL1bipveoHHz4dJjy9NdsDgWeZHk"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747e99caf41039-ATL
+
+{"id": "927198824349446154", "type": 0, "content": "viktor? xdddd", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:06.246000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_15_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:06.308Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":5,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:06.246000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198824349446154","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor? xdddd","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_16_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:08.029Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":6,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:07.938000+00:00","referenced_message":null,"pinned":false,"nonce":"927198832876322816","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198831446216755","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_17_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:08.029Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"the hood hates viktor now"}
+@@@_18_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:08.167Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:08 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=df4c503c6bd311eca78342010a0a001a; Expires=Fri, 01-Jan-2027 13:57:08 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=df4c503c6bd311eca78342010a0a001aeb692594ae588cf70b86b3e4123172ae97468a2fade96ea0266ea04e828b9f97; Expires=Fri, 01-Jan-2027 13:57:08 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 3
+x-ratelimit-reset: 1641131831.227
+x-ratelimit-reset-after: 3.163
+x-envoy-upstream-service-time: 105
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hNCFQ15eHRwZIBJGuOe2vFpzMD7Gjku%2F1cdYJIAjzXJXeyBqid%2FUKf6B6P10jN9uC3A15J1W40rkvprZ6tON9yj0LpQ%2F%2Bl2WilClwaWcs45EotBjLxFE%2B9y1kuB9"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747ea539831039-ATL
+
+{"id": "927198832142479380", "type": 0, "content": "the hood hates viktor now", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:08.104000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_19_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:08.168Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":7,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:08.104000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198832142479380","flags":0,"embeds":[],"edited_timestamp":null,"content":"the hood hates viktor now","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_20_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:10.034Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":8,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:09.913000+00:00","referenced_message":null,"pinned":false,"nonce":"927198841357205504","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198839729975317","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_21_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:10.034Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"i just hate viktor so much"}
+@@@_22_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:10.114Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:10 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e07aa4e66bd311ec9d1542010a0a0379; Expires=Fri, 01-Jan-2027 13:57:10 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e07aa4e66bd311ec9d1542010a0a037969701ddb190f5ebe52def7b4e74108e9c61a80141cace78507474074ebd4ab7f; Expires=Fri, 01-Jan-2027 13:57:10 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 2
+x-ratelimit-reset: 1641131831.228
+x-ratelimit-reset-after: 1.162
+x-envoy-upstream-service-time: 45
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DfG16gfEc7lhN2kZWtRspnbLZOvC7Zd7V1FoKjRcee9Dt8bg0%2Ff3KRSBlBUU9qaJoRdgFnHvs1BEdMUWDMV%2FCdTo67LIQQsw4GrDe4Tk8FHlZJLIPAoC8V9dvLzZ"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747eb1cab61039-ATL
+
+{"id": "927198840426217492", "type": 0, "content": "i just hate viktor so much", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:10.079000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_23_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:10.114Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":9,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:10.079000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198840426217492","flags":0,"embeds":[],"edited_timestamp":null,"content":"i just hate viktor so much","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_24_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:11.214Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":10,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:11.190000+00:00","referenced_message":null,"pinned":false,"nonce":"927198845983522816","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198845086085221","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_25_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:11.216Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor? xdddd"}
+@@@_26_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:11.400Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:11 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e1ae21c56bd311eca2a242010a0a026e; Expires=Fri, 01-Jan-2027 13:57:11 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e1ae21c56bd311eca2a242010a0a026e36200fedd141b256d4ccb794a9661ae3cca14a4583863f265b684fcd8fdef291; Expires=Fri, 01-Jan-2027 13:57:11 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 4
+x-ratelimit-reset: 1641131836.261
+x-ratelimit-reset-after: 5.000
+x-envoy-upstream-service-time: 143
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lO8TqBja9GBHXxCb0aESHJuIUPkl0CmmJH84c9JHTd1rmzqjQ%2FyGmN3boYMbOmSq5EunC%2FazVB7E6A5ZiYjTIIVC9WhHyBOcl%2BXBseakvnh9f6Kkpw351YzmOYxF"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747eb92c1d1039-ATL
+
+{"id": "927198845526474782", "type": 0, "content": "viktor? xdddd", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:11.295000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_27_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:11.400Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":11,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:11.295000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198845526474782","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor? xdddd","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_28_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:12.110Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":12,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:12.081000+00:00","referenced_message":null,"pinned":false,"nonce":"927198850060386304","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198848823218226","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_29_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:12.110Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"stfu viktor"}
+@@@_30_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:12.255Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:12 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e1ad65d96bd311ecb3fd42010a0a06e1; Expires=Fri, 01-Jan-2027 13:57:12 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e1ad65d96bd311ecb3fd42010a0a06e187304983d54e1431991356306ce9f4f38e2f53202322b9c650a5175a244ab0ee; Expires=Fri, 01-Jan-2027 13:57:12 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 3
+x-ratelimit-reset: 1641131836.262
+x-ratelimit-reset-after: 4.095
+x-envoy-upstream-service-time: 111
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NZBQRMsB7h81zDrp%2FcYTKes4KUSld5LQLcP7ibH0%2FEvWsDU5OaGtOpu0I9ZwEjnHFtzmevzVUHGAGUAHK9mqYT%2FNqIZ0lC%2B6wLPQJgoWkJWfV884Nxwto93YHyJr"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747ebebafe1039-ATL
+
+{"id": "927198849301348422", "type": 0, "content": "stfu viktor", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:12.195000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_31_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:12.255Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":13,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:12.195000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198849301348422","flags":0,"embeds":[],"edited_timestamp":null,"content":"stfu viktor","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_32_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:13.111Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":14,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:13.080000+00:00","referenced_message":null,"pinned":false,"nonce":"927198854225330176","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198853013307432","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_33_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:13.111Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"imagine being viktor xddd"}
+@@@_34_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:13.187Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:13 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e247a7e16bd311ecb48342010a0a051e; Expires=Fri, 01-Jan-2027 13:57:13 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e247a7e16bd311ecb48342010a0a051e1f99f430e5b4409d8b8547ebe26b192f0dbd160b305ac7701164c8de5e9a0d60; Expires=Fri, 01-Jan-2027 13:57:13 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 2
+x-ratelimit-reset: 1641131836.260
+x-ratelimit-reset-after: 3.123
+x-envoy-upstream-service-time: 44
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0VHpuB3TA%2F4OpNE1dRjUJ8z%2BzabmBi6tLnkda0bzAa9r9HwOSqEXwzGkiz2aJsJWSmPM27JGtxjLCce3cqfGrY2CtKGLmrWtc6Nosy3TpZVerp7%2FvHMaFFryQph%2F"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747ec4fb621039-ATL
+
+{"id": "927198853302718474", "type": 0, "content": "imagine being viktor xddd", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:13.149000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_35_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:13.187Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":15,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:13.149000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198853302718474","flags":0,"embeds":[],"edited_timestamp":null,"content":"imagine being viktor xddd","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_36_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:14.130Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":16,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:14.107000+00:00","referenced_message":null,"pinned":false,"nonce":"927198858499325952","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198857320878112","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_37_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:14.131Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor? xdddd"}
+@@@_38_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:14.286Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e2ea860a6bd311ecbaa242010a0a06f9; Expires=Fri, 01-Jan-2027 13:57:14 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e2ea860a6bd311ecbaa242010a0a06f9b0ae75f23bc6b4bf86d144278f400ccba36ebd4dce997777cd08502023c73a00; Expires=Fri, 01-Jan-2027 13:57:14 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 1
+x-ratelimit-reset: 1641131836.261
+x-ratelimit-reset-after: 2.091
+x-envoy-upstream-service-time: 114
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Phy8Y4exIrmIJIM7YRGuA3EuR8QioIWzquWY9jIivUlICn5IHcWVtDZBsWI%2FmHLXrQOsfZXhL8Y2FfPr1XcU2lo1CBTkCpgMrn%2B%2FIhT6RzQfDjPELtIRWeKUVaYi"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747ecb5ca71039-ATL
+
+{"id": "927198857715146822", "type": 0, "content": "viktor? xdddd", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:14.201000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_39_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:14.286Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":17,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:14.201000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198857715146822","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor? xdddd","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_40_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:15.292Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":18,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:15.245000+00:00","referenced_message":null,"pinned":false,"nonce":"927198863222112256","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198862093975593","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_41_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:15.292Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor? xdddd"}
+@@@_42_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:15.393Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:15 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e3871a4a6bd311ec911642010a0a09f4; Expires=Fri, 01-Jan-2027 13:57:15 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e3871a4a6bd311ec911642010a0a09f429acec30d1b796c2b59e39a8d5f3e0932738fafc3a0dec713b631443cc8fe386; Expires=Fri, 01-Jan-2027 13:57:15 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1641131836.260
+x-ratelimit-reset-after: 0.939
+x-envoy-upstream-service-time: 68
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lzKWHkjSwuNjp7KFnU1hZzxCRk56MmBzkVA4jSNGACANAIrpl8HpDeVQPXHqj67NsRm1lLzfNIR0G7xRTL5FKHgW%2FVKQdHKRCWh4Dql6Ng97wZbVA8lYVdWM%2F6El"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747ed29e6a1039-ATL
+
+{"id": "927198862114947124", "type": 0, "content": "viktor? xdddd", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:15.250000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_43_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:15.393Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":19,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:15.250000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198862114947124","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor? xdddd","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_44_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:20.838Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":20,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:20.808000+00:00","referenced_message":null,"pinned":false,"nonce":"927198886462750720","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198885426901032","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_45_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:20.838Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor get ratioed + ur white + u fell off"}
+@@@_46_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:20.908Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:20 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e67417856bd311eca95f42010a0a03ba; Expires=Fri, 01-Jan-2027 13:57:20 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e67417856bd311eca95f42010a0a03baab505222c5d96d4f2dd3cf269371ea3bd3648c75c03336464c8c6d7d5b5e53d1; Expires=Fri, 01-Jan-2027 13:57:20 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 4
+x-ratelimit-reset: 1641131845.865
+x-ratelimit-reset-after: 5.000
+x-envoy-upstream-service-time: 37
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qrdCxeXyWjZJb5SqZyO0E70jU%2B2y9SCFOBp5i%2BPgfu9WRjnrLqGQD5LcHYpe%2FUVfpVpdsk28kLQldq9Zty6Pr0j3Bp8qDUi1xNuAwR1iNJXW%2BD5Ka7HfehTAcJll"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747ef54ac31039-ATL
+
+{"id": "927198885712117761", "type": 0, "content": "viktor get ratioed + ur white + u fell off", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:20.876000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_47_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:20.908Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":21,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:20.876000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198885712117761","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor get ratioed + ur white + u fell off","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_48_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:21.834Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":22,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:21.800000+00:00","referenced_message":null,"pinned":false,"nonce":"927198890820632576","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198889587638292","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_49_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:21.834Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor get ratioed + ur white + u fell off"}
+@@@_50_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:21.904Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e70c99006bd311ec8d7d42010a0a0685; Expires=Fri, 01-Jan-2027 13:57:21 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e70c99006bd311ec8d7d42010a0a0685ef03361e5e40509398a6a289f51755cc89832f42635f2aaa19ec6452c4f3f600; Expires=Fri, 01-Jan-2027 13:57:21 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 3
+x-ratelimit-reset: 1641131845.865
+x-ratelimit-reset-after: 4.005
+x-envoy-upstream-service-time: 36
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fnVpqJb%2Bf4UA2V5yRpPvJK5WdNn4u2BE8WmPYTYTWjWGOF1Y7ICQNq%2Bt90JftMODindm4F%2Bjy%2B2Ytv0jGkVJs2BMNrtd3bVGD46GdweWL9U6v9Q9tPMXQNjBTWxm"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747efb8be91039-ATL
+
+{"id": "927198889520545813", "type": 0, "content": "viktor get ratioed + ur white + u fell off", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:21.784000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_51_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:21.905Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":23,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:21.784000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198889520545813","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor get ratioed + ur white + u fell off","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_52_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:23.548Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":24,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:23.507000+00:00","referenced_message":null,"pinned":false,"nonce":"927198897888034816","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198896747343902","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_53_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:23.549Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"cringe viktor"}
+@@@_54_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:23.642Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e8e705356bd311eca13442010a0a04af; Expires=Fri, 01-Jan-2027 13:57:23 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e8e705356bd311eca13442010a0a04af0fecfd92f01d9afd9fcf7e9d2460d7bb2cea3e61828c75a7095ea16a87fc9a1e; Expires=Fri, 01-Jan-2027 13:57:23 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 2
+x-ratelimit-reset: 1641131845.865
+x-ratelimit-reset-after: 2.291
+x-envoy-upstream-service-time: 52
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UyEWXZbPHVou2m90ZGmTKEGVgiTsSnDObLfvBXgFBUjNAjp%2FZcLyO3dbbhRAeMpBS80w%2BxDFB4H%2FEFv9W9qV66sMJ%2BsMjKxVSLtNxy4N1iRzXwPtqiAFSFVXkoEr"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747f0638c01039-ATL
+
+{"id": "927198897103847464", "type": 0, "content": "cringe viktor", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:23.592000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_55_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:23.642Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":25,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:23.592000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198897103847464","flags":0,"embeds":[],"edited_timestamp":null,"content":"cringe viktor","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_56_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:24.795Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":26,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:24.694000+00:00","referenced_message":null,"pinned":false,"nonce":"927198903063805952","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198901725978685","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_57_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:24.796Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor is so gae"}
+@@@_58_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:24.958Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:24 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e96da9c96bd311ec830842010a0a00dc; Expires=Fri, 01-Jan-2027 13:57:24 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e96da9c96bd311ec830842010a0a00dc5da24f4b6a925751d9abd8fe6828bb065671101455c1314f670e1f0c994ccd2b; Expires=Fri, 01-Jan-2027 13:57:24 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 1
+x-ratelimit-reset: 1641131845.867
+x-ratelimit-reset-after: 1.024
+x-envoy-upstream-service-time: 129
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IggoCfzWHUFEFC%2F38x4tZPTCWBY7hHeeJbsXP9bMAwc%2F4xripijgJ6ESf%2BTlaLALDF880Co8TCig7UVy4mP51n3%2Bh%2BzNHMeO%2Fgn7Af%2B3g0Tx%2FQM9KECkQkE2OrAs"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747f0e09be1039-ATL
+
+{"id": "927198902497710110", "type": 0, "content": "viktor is so gae", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:24.878000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_59_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:24.958Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":27,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:24.878000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198902497710110","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor is so gae","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_60_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:25.825Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":28,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:25.799000+00:00","referenced_message":null,"pinned":false,"nonce":"927198907597848576","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198906360692777","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_61_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:25.825Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor fell off"}
+@@@_62_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:25.901Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=e9781fda6bd311ecbee742010a0a0690; Expires=Fri, 01-Jan-2027 13:57:25 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=e9781fda6bd311ecbee742010a0a0690c2ddc29c257d5a4719e055db29c5cd77a8a4ee9f1e29114e5ed216f8740f4d1c; Expires=Fri, 01-Jan-2027 13:57:25 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1641131845.865
+x-ratelimit-reset-after: 0.011
+x-envoy-upstream-service-time: 41
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ft%2B2gG2cV9YzBpz%2Fcxh25Qtyki9v32WFEzBf7h5D0SAgzYLybZFo7OGH4vk2obrZfzUywH059OL2WlimiCQyZU5bYhMHQhL0jg3Nv%2FfbYgycZku7y%2B5S8X65tPBz"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747f1479671039-ATL
+
+{"id": "927198906314543195", "type": 0, "content": "viktor fell off", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:25.788000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_63_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:25.903Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":29,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:25.788000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198906314543195","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor fell off","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_64_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:27.027Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":30,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:26.960000+00:00","referenced_message":null,"pinned":false,"nonce":"927198912219971584","mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":[],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2021-12-26T18:31:03.877000+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198911230267402","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor","components":[],"channel_id":"924731279893729280","author":{"username":"sabotack","public_flags":256,"id":"150314037975056384","discriminator":"3984","avatar":"1df8c7a37b078c290a2d5939996c042e"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_65_@@@
+HTTP_SEND_POST [USER_AGENT #TID2544035648] - 2022-01-2T13:57:27.027Z - https://discord.com/api/v9/channels/924731279893729280/messages
+User-Agent: Orca (https://github.com/cee-studio/orca)
+Authorization: Bot OTI0MzAyNTQyOTgzMjc4NjAy.Yccl0g.Ai08rlu6toRi0gWeX5gk86AQQaQ
+Content-Type: application/json
+{"content":"viktor fell off"}
+@@@_66_@@@
+HTTP_RCV_OK(200) [USER_AGENT #TID2544035648] - 2022-01-2T13:57:27.121Z - https://discord.com/api/v9/channels/924731279893729280/messages
+Date: Sun, 02 Jan 2022 13:57:27 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+set-cookie: __dcfduid=eb3987326bd311ec9d4342010a0a0010; Expires=Fri, 01-Jan-2027 13:57:27 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+set-cookie: __sdcfduid=eb3987326bd311ec9d4342010a0a0010b5ef3f197f7ed827a067e4f5aa0d3e7ff463b5f7e91bf9d828ad6d41c62b093b; Expires=Fri, 01-Jan-2027 13:57:27 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-ratelimit-bucket: a06de0de4a08126315431cc0c55ee3dc
+x-ratelimit-limit: 5
+x-ratelimit-remaining: 4
+x-ratelimit-reset: 1641131852.059
+x-ratelimit-reset-after: 5.000
+x-envoy-upstream-service-time: 54
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Tp13KQr4G0TKJzRZBCKkZ3QLpkBEHKPCTLy3%2F0AQfRcApdhXWPdupFpYZk6Fe9UTsMXIvQD7ny5H0UQ00W8CDvRrDZbSo9BMErLSONFOzIGoPopMjnHr277OQkhG"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 6c747f1bfa991039-ATL
+
+{"id": "927198911695822878", "type": 0, "content": "viktor fell off", "channel_id": "924731279893729280", "author": {"id": "924302542983278602", "username": "viktor hater", "avatar": "b7c0870f8ba2518e46ef218c11841f2c", "discriminator": "2820", "public_flags": 0, "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2022-01-02T13:57:27.071000+00:00", "edited_timestamp": null, "flags": 0, "components": [], "referenced_message": null}
+@@@_67_@@@
+WS_RCV_TEXT [WEBSOCKETS #TID2544035648] - 2022-01-2T13:57:27.121Z - wss://gateway.discord.gg/?v=9&encoding=json
+{"t":"MESSAGE_CREATE","s":31,"op":0,"d":{"type":0,"tts":false,"timestamp":"2022-01-02T13:57:27.071000+00:00","referenced_message":null,"pinned":false,"mentions":[],"mention_roles":[],"mention_everyone":false,"member":{"roles":["926960181722628118"],"premium_since":null,"pending":false,"nick":null,"mute":false,"joined_at":"2022-01-01T22:08:49.476773+00:00","hoisted_role":null,"deaf":false,"communication_disabled_until":null,"avatar":null},"id":"927198911695822878","flags":0,"embeds":[],"edited_timestamp":null,"content":"viktor fell off","components":[],"channel_id":"924731279893729280","author":{"username":"viktor hater","public_flags":0,"id":"924302542983278602","discriminator":"2820","bot":true,"avatar":"b7c0870f8ba2518e46ef218c11841f2c"},"attachments":[],"guild_id":"924731053690736640"}}
+@@@_68_@@@
