@@ -10,6 +10,8 @@
 void on_ready(struct discord *client);
 void on_viktor(struct discord *client, const struct discord_message *msg);
 
+int msgCounter = 0;
+
 int main(void) {
 
     struct discord *client = discord_config_init("./../../../mybot_config.json");
@@ -35,7 +37,7 @@ void on_ready(struct discord *client) {
 
 void on_viktor(struct discord *client, const struct discord_message *msg) {
     if(msg->author->bot) return;
-
+    
     char *message = strdup(msg->content);
 
     for(int i = 0; i < strlen(message); i++) {
@@ -74,6 +76,16 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
 
         struct discord_create_message_params params = { .content = hateComments[randNum] };
         discord_create_message(client, msg->channel_id, &params, NULL);
+    }
+    else if(msg->author->id == 150314037975056384) {
+        struct discord_create_message_params params = { .content = "<@150314037975056384> sent a message!" };
+        discord_create_message(client, msg->channel_id, &params, NULL);
+        
+        if(msgCounter >= 10) {
+            struct discord_create_message_params params = { .content = "hey <@150314037975056384>" };
+            discord_create_message(client, msg->channel_id, &params, NULL);
+            msgCounter = 0;
+        }
     }
 }
 
