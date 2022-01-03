@@ -45,7 +45,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
     }
 
     if(strstr(message, "viktor") != NULL) {
-        int randNum = 0;
+        int randNum = 0, temp = 0;
 
         char *hateComments[] = {
             "all my homies hate viktor...",
@@ -70,7 +70,10 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             "pleeaaseee shut the fuck up viktor",
             "viktor stop crying",
             "viktor's forehead so big his dreams are in IMAX",
-            "viktor is a sniper's dream target"
+            "viktor is a sniper's dream target",
+            "rasmus u have more face to wash every morning",
+            "viktor ur hairline looks like the mcdonalds logo",
+            "<@136912986605355008> if i throw a stick will u leave?"
         };
 
         srand(time(NULL));
@@ -82,6 +85,15 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             discord_create_message(client, msg->channel_id, &params, NULL);
         }
         else {
+            /* if rasmus roast is chosen */
+            if(randNum == 23){ 
+                /* generate a new random number to decrease the odds of getting the rasmus roast */
+                temp = rand() % 2;
+                if(temp != 0) {
+                    on_viktor(client, msg);
+                }
+            }
+
             struct discord_create_message_params params = { .content = hateComments[randNum] };
             discord_create_message(client, msg->channel_id, &params, NULL);
         }
