@@ -36,10 +36,11 @@ void on_ready(struct discord *client) {
 
 void on_viktor(struct discord *client, const struct discord_message *msg) {
     if(msg->author->bot) return;
-    int msgLength = sizeof(msg)/sizeof(char);
+    int msgLength = sizeof(msg->content)/sizeof(char);
 
     char message[msgLength];
-    strcpy(message, msg);
+    strcpy(message, msg->content);
+    log_info("Message: -- %s --", message);
 
     for(int i = 0; i < strlen(message); i++) {
         message[i] = tolower(message[i]);
