@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "discord.h"
 
-#define NUM_OF_COMMENTS 21
+#define MESSAGES_FOR_NOT_ASKING 10
 
 void on_ready(struct discord *client);
 void on_viktor(struct discord *client, const struct discord_message *msg);
@@ -27,7 +27,6 @@ int main(void) {
     return 0;
 }
 
-
 void on_ready(struct discord *client) {
     const struct discord_user *bot = discord_get_self(client);
     
@@ -47,7 +46,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
     if(strstr(message, "viktor") != NULL) {
         int randNum = 0;
 
-        char *hateComments[100] = {
+        char *hateComments[] = {
             "all my homies hate viktor...",
             "i hate viktor",
             "shut up viktor",
@@ -72,19 +71,16 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
         };
 
         srand(time(NULL));
-        randNum = rand() % NUM_OF_COMMENTS;
+        randNum = rand() % (sizeof(hateComments)/sizeof(hateComments[0]));
 
         struct discord_create_message_params params = { .content = hateComments[randNum] };
         discord_create_message(client, msg->channel_id, &params, NULL);
     }
-    else if(msg->author->id == 150314037975056384) {
+    else if(msg->author->id == 136912986605355008) {
         msgCounter++;
-        
-        struct discord_create_message_params params = { .content = "<@150314037975056384> sent a message!" };
-        discord_create_message(client, msg->channel_id, &params, NULL);
-        
-        if(msgCounter >= 10) {
-            struct discord_create_message_params params = { .content = "hey <@150314037975056384>" };
+
+        if(msgCounter >= MESSAGES_FOR_NOT_ASKING) {
+            struct discord_create_message_params params = { .content = "<@136912986605355008> did anyone ask?" };
             discord_create_message(client, msg->channel_id, &params, NULL);
             msgCounter = 0;
         }
