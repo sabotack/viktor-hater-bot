@@ -97,6 +97,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             }
 
             struct discord_create_message_params params = { .content = hateComments[randNum] };
+            log_info("Params content: -- %s -- randNum: %d", params.content, randNum);
             discord_create_message(client, msg->channel_id, &params, NULL);
         }
     }
