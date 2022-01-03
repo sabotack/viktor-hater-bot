@@ -17,7 +17,7 @@ int newRoast = 0;
 int main(void) {
 
     struct discord *client = discord_config_init("./../../../mybot_config.json");
-    disc
+    
     discord_set_on_ready(client, &on_ready);
     discord_set_on_message_create(client, &on_viktor);
 
