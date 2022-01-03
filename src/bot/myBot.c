@@ -80,7 +80,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
 
         if(newRoast == 0) {
             params.content = hateComments[21];
-            newRoast == 1;
+            newRoast = 1;
         }
         else {
             params.content = hateComments[randNum];
