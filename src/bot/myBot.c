@@ -14,44 +14,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg);
 int msgCounter = 0;
 int newRoast = 0;
 
-int main(void) {
-
-    struct discord *client = discord_config_init("./../../../mybot_config.json");
-    
-    discord_set_on_ready(client, &on_ready);
-    discord_set_on_message_create(client, &on_viktor);
-
-    discord_run(client);
-    discord_cleanup(client);
-
-    return EXIT_SUCCESS;
-}
-
-void on_ready(struct discord *client) {
-    const struct discord_user *bot = discord_get_self(client);
-    
-    log_info("Succesfully connected to Discord as %s#%s!",
-        bot->username, bot->discriminator);
-}
-
-void on_viktor(struct discord *client, const struct discord_message *msg) {
-    if(msg->author->bot) return;
-    int msgLength = sizeof(msg->content)/sizeof(char);
-
-    char message[(msgLength+1)];
-    memset(message, '\0', sizeof(message));
-    
-    strcpy(message, msg->content);
-    log_info("Message: -- %s --", message);
-
-    for(int i = 0; i < strlen(message); i++) {
-        message[i] = tolower(message[i]);
-    }
-
-    if(strstr(message, "viktor") != NULL) {
-        int randNum = 0, temp = 0;
-
-        char *hateComments[] = {
+char *hateComments[] = {
             "all my homies hate viktor...",
             "i hate viktor",
             "shut up viktor",
@@ -79,6 +42,43 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             "viktor ur hairline looks like the mcdonalds logo",
             "<@136912986605355008> if i throw a stick will u leave?"
         };
+
+int main(void) {
+
+    struct discord *client = discord_config_init("./../../../mybot_config.json");
+    
+    discord_set_on_ready(client, &on_ready);
+    discord_set_on_message_create(client, &on_viktor);
+
+    discord_run(client);
+    discord_cleanup(client);
+
+    return EXIT_SUCCESS;
+}
+
+void on_ready(struct discord *client) {
+    const struct discord_user *bot = discord_get_self(client);
+    
+    log_info("Succesfully connected to Discord as %s#%s!",
+        bot->username, bot->discriminator);
+}
+
+void on_viktor(struct discord *client, const struct discord_message *msg) {
+    if(msg->author->bot) return;
+    int msgLength = sizeof(msg->content)/sizeof(char);
+
+    char message[(msgLength+1)];
+    memset(message, '\0', sizeof(message));
+
+    strcpy(message, msg->content);
+    log_info("Message: -- %s --", message);
+
+    for(int i = 0; i < strlen(message); i++) {
+        message[i] = tolower(message[i]);
+    }
+
+    if(strstr(message, "viktor") != NULL) {
+        int randNum = 0, temp = 0;
 
         srand(time(NULL));
         randNum = rand() % (sizeof(hateComments)/sizeof(hateComments[0]));
