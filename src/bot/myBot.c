@@ -78,6 +78,8 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
         discord_create_message(client, msg->channel_id, &params, NULL);
     }
     else if(msg->author->id == 150314037975056384) {
+        msgCounter++;
+        
         struct discord_create_message_params params = { .content = "<@150314037975056384> sent a message!" };
         discord_create_message(client, msg->channel_id, &params, NULL);
         
