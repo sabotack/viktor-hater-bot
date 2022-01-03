@@ -6,6 +6,7 @@
 #include "discord.h"
 
 #define MESSAGES_FOR_NOT_ASKING 10
+#define FIRST_ROAST_INDEX 22
 
 void on_ready(struct discord *client);
 void on_viktor(struct discord *client, const struct discord_message *msg);
@@ -18,14 +19,12 @@ int main(void) {
     struct discord *client = discord_config_init("./../../../mybot_config.json");
     
     discord_set_on_ready(client, &on_ready);
-
     discord_set_on_message_create(client, &on_viktor);
 
     discord_run(client);
-
     discord_cleanup(client);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 void on_ready(struct discord *client) {
@@ -71,7 +70,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             "viktor stop crying",
             "viktor's forehead so big his dreams are in IMAX",
             "viktor is a sniper's dream target",
-            "rasmus u have more face to wash every morning",
+            "<@352116555464704001> u have more face to wash every morning", /* rasmus roast */
             "viktor ur hairline looks like the mcdonalds logo",
             "<@136912986605355008> if i throw a stick will u leave?"
         };
@@ -80,7 +79,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
         randNum = rand() % (sizeof(hateComments)/sizeof(hateComments[0]));
 
         if(newRoast == 0) {
-            struct discord_create_message_params params = { .content = hateComments[21] };
+            struct discord_create_message_params params = { .content = hateComments[FIRST_ROAST_INDEX] };
             newRoast = 1;
             discord_create_message(client, msg->channel_id, &params, NULL);
         }
@@ -107,5 +106,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             msgCounter = 0;
         }
     }
+
+    free(message);
 }
 
