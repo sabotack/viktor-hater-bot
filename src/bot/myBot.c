@@ -38,7 +38,9 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
     if(msg->author->bot) return;
     int msgLength = sizeof(msg->content)/sizeof(char);
 
-    char message[msgLength];
+    char message[(msgLength+1)];
+    memset(message, '\0', sizeof(message));
+    
     strcpy(message, msg->content);
     log_info("Message: -- %s --", message);
 
