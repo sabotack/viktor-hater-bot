@@ -44,8 +44,6 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
         message[i] = tolower(message[i]);
     }
 
-    struct discord_create_message_params params;
-
     if(strstr(message, "viktor") != NULL) {
         int randNum = 0;
 
@@ -79,19 +77,20 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
         randNum = rand() % (sizeof(hateComments)/sizeof(hateComments[0]));
 
         if(newRoast == 0) {
-            params.content = hateComments[21];
+            struct discord_create_message_params params = { .content = hateComments[21] };
             newRoast = 1;
+            discord_create_message(client, msg->channel_id, &params, NULL);
         }
         else {
-            params.content = hateComments[randNum];
+            struct discord_create_message_params params = { .content = hateComments[randNum] };
+            discord_create_message(client, msg->channel_id, &params, NULL);
         }
-        discord_create_message(client, msg->channel_id, &params, NULL);
     }
     else if(msg->author->id == 136912986605355008) {
         msgCounter++;
 
         if(msgCounter >= MESSAGES_FOR_NOT_ASKING) {
-            params.content = "<@136912986605355008> did anyone ask?";
+            struct discord_create_message_params params = { .content = "<@136912986605355008> did anyone ask?" };
             discord_create_message(client, msg->channel_id, &params, NULL);
             msgCounter = 0;
         }
