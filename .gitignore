@@ -44,6 +44,7 @@
 
 # Others
 *.json
+*.log
 
 # Kernel Module Compile Results
 *.mod*
