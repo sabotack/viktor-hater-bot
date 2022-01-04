@@ -82,7 +82,7 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
         randNum = rand() % (ln);
 
         if(newRoast == 0) {
-            struct discord_create_message_params params = { .content = hateComments[21] };
+            struct discord_create_message_params params = { .content = hateComments[18] };
             newRoast = 1;
             discord_create_message(client, msg->channel_id, &params, NULL);
         }
