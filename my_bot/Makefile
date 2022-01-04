@@ -1,7 +1,7 @@
 # This Makefile assumes the top folder has been built
 .SILENT: config
 
-TOP = ..
+TOP = ../..
 
 # CC default compiler is gcc, can be changed
 #    ex: 'CC=clang make'
