@@ -3,6 +3,8 @@
 #include <time.h>
 #include <string.h>
 #include <ctype.h>
+#include <signal.h>
+
 #include "discord.h"
 
 #define MESSAGES_FOR_NOT_ASKING 10
@@ -45,6 +47,8 @@ char *hateComments[] = {
 
 int main(void) {
 
+    sigaction(SIGPIPE, &(struct sigaction){SIG_IGN}, NULL);
+    
     srand(time(NULL));
 
     struct discord *client = discord_config_init("./mybot_config.json");
