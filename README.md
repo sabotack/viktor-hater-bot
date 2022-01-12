@@ -16,5 +16,5 @@ Along with learning about Orca, I also got familiar with the Discord API and dev
 
 ## License
 
-Licensed under the [MIT](LICENSE.txt) license.
+Licensed under the [MIT](LICENSE) license.
 
