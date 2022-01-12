@@ -9,7 +9,7 @@
 A discord bot written in C with the sole purpose of hating on Viktor (this bot is made for entertainment purposes only).
 The bot listens for the word 'viktor' in all channels and responds with a roast/comment selected randomly from a predefined list.
 
-This project was originally created during my free time in the break between 1st and 2nd semester of Software Engineering. 
+This project was originally created during my free time in the break between 1st and 2nd semester (JAN 2022) of Software Engineering at Aalborg University. 
 
 The main point was to practice C-programming while discovering and learning an entire new framework for discord bot development (Orca).
 Along with learning about Orca, I also got familiar with the Discord API and developer portal.
