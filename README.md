@@ -14,6 +14,16 @@ This project was originally created during my free time in the break between my 
 The main point was to practice C-programming while discovering and learning an entire new framework for discord bot development (Orca).
 Along with learning about Orca, I also got familiar with the Discord API and developer portal.
 
+## Stability Levels [#1 - #5]
+The stability levels are used to indicate program stability, where level #1 indicates least proven stability and level #5 indicates most stable release):
+
+[In hours of continuous program runtime]
+- #1: 12+ hours
+- #2: 24+ hours
+- #3: 48+ hours
+- #4: 168+ hours
+- #5: 720+ hours
+
 ## License
 
 Licensed under the [MIT](LICENSE) license.
