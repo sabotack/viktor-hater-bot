@@ -1,9 +1,9 @@
 # viktor-hater-bot
-![Latest stable release](https://img.shields.io/github/v/release/sabotack/viktor-hater-bot?color=brightgreen&label=latest%20stable%20version)
-![Current Version](https://img.shields.io/github/v/release/sabotack/viktor-hater-bot?include_prereleases&label=current%20version)
-![Commits since latest release (including pre-releases)](https://img.shields.io/github/commits-since/sabotack/viktor-hater-bot/latest?include_prereleases)
-![Repository size](https://img.shields.io/github/repo-size/sabotack/viktor-hater-bot)
-![License](https://img.shields.io/github/license/sabotack/viktor-hater-bot)
+![Latest stable release](https://img.shields.io/github/v/release/sabotack/viktor-hater-bot?color=brightgreen&label=latest%20stable%20version&style=flat-square)
+![Current Version](https://img.shields.io/github/v/release/sabotack/viktor-hater-bot?include_prereleases&label=current%20version&style=flat-square)
+![Commits since latest release (including pre-releases)](https://img.shields.io/github/commits-since/sabotack/viktor-hater-bot/latest?include_prereleases&style=flat-square)
+![Repository size](https://img.shields.io/github/repo-size/sabotack/viktor-hater-bot?style=flat-square)
+![License](https://img.shields.io/github/license/sabotack/viktor-hater-bot?style=flat-square)
 
 ## About
 
