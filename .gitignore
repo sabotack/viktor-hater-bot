@@ -45,6 +45,7 @@
 # Others
 *.json
 *.log
+*.save
 
 # Kernel Module Compile Results
 *.mod*
