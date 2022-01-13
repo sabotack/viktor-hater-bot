@@ -22,8 +22,8 @@ The stability levels are used to indicate program stability, where level #1 indi
 - #1: 12+ hours
 - #2: 24+ hours
 - #3: 48+ hours
-- #4: 168+ hours
-- #5: 720+ hours
+- #4: 96+ hours
+- #5: 168+ hours
 
 ## License
 
