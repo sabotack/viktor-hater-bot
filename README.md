@@ -15,7 +15,24 @@ This project was originally created during my free time in the break between my 
 The main point was to practice C-programming while discovering and learning an entire new framework for discord bot development (Orca).
 Along with learning about Orca, I also got familiar with the Discord API and developer portal.
 
-## Stability Levels [#1 - #5]
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Getting started](#getting-started)
+    - [Installation](#installation)
+3. [Stability Levels](#stability-levels)
+4. [License](#license)
+
+## Prerequisites
+- [git](https://git-scm.com/)
+- [gcc](https://gcc.gnu.org/)
+- [make](https://www.gnu.org/software/make/)
+- [orca](https://github.com/cee-studio/orca/)
+
+## Getting started
+### Installation
+
+## Stability Levels
+[#1 - #5]  
 The stability levels are used to indicate program stability, where level #1 indicates least proven stability and level #5 indicates most stable release):
 
 [In hours of continuous program runtime]
