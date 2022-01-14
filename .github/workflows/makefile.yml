@@ -1,0 +1,27 @@
+name: Makefile-build-test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: sudo apt install -y build-essential libcurl4-openssl-dev
+      
+    - name: Install and setup Orca
+      run: git clone https://github.com/cee-studio/orca.git && cd ./orca && make && mkdir build-test
+    
+    - name: Move project files to test environment
+      run: cp -r ./my_bot ./orca/build-test
+      
+    - name: Build check
+      run: cd ./orca/build-test/my_bot && make
