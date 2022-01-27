@@ -69,12 +69,11 @@ char *hateComments[] = {
 };
 
 int main(void) {
-
-    sigaction(SIGPIPE, &(struct sigaction){{SIG_IGN}}, NULL);
+    sigaction(SIGPIPE, &(struct sigaction){SIG_IGN}, NULL);
     
     srand(time(NULL));
 
-    struct discord *client = discord_config_init("./mybot_config.json");
+    struct discord *client = discord_config_init("./config.json");
     
     discord_set_on_ready(client, &on_ready);
     discord_set_on_message_create(client, &on_msg_create);
@@ -139,6 +138,9 @@ void on_help(struct discord *client, const struct discord_message *msg) {
     struct discord_create_message_params params = { .content = "help me drag these nuts across your face xddd got em" };
     discord_create_message(client, msg->channel_id, &params, NULL);
 
+    log_info("Received: %s", msg->content);
+    log_info("Sent '!help' reply");
+
     previousNum = 0;
 }
 
@@ -149,22 +151,29 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
     if(firstRoast) {
         struct discord_create_message_params params = { .content = hateComments[FIRST_ROAST_ID] };
         discord_create_message(client, msg->channel_id, &params, NULL);
+
+        log_info("Sent first roast");
             
         previousNum = FIRST_ROAST_ID;
         firstRoast = false;
     }
     else {
         length = sizeof(hateComments)/sizeof(hateComments[0]);
-        randNum = rand() % (length);
-            
+        randNum = rand() % length;
+        
+        log_info("Received: %s", msg->content);
+        log_info("length = %d, random number = %d", length, randNum);
+
         /* If rasmus roast is chosen */
         if(randNum == RASMUS_ROAST_ID) { 
             /* Generate a new random number to decrease the odds of getting the rasmus roast */
             temp = rand() % 2;
 
+            log_info("Got Rasmus roast! Temp = %d, Proceed? %s", temp, temp == 0 ? "True" : "False");
+
             /* If new number equals 1: reroll, otherwise continue */
             if(temp == 1) {
-                on_msg_create(client, msg);
+                on_viktor(client, msg);
             }
         }
 
