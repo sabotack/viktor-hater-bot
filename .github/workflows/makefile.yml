@@ -17,11 +17,11 @@ jobs:
     - name: Install dependencies
       run: sudo apt install -y build-essential libcurl4-openssl-dev
       
-    - name: Install and setup Orca
-      run: git clone https://github.com/cee-studio/orca.git && cd ./orca && make && mkdir build-test
+    - name: Install and setup Concord
+      run: git clone https://github.com/cogmasters/concord.git && cd ./concord && make && mkdir build-test
     
     - name: Move project files to test environment
-      run: cp -r ./my_bot ./orca/build-test
+      run: cp -r ./my_bot ./concord/build-test
       
     - name: Build check
-      run: cd ./orca/build-test/my_bot && make
+      run: cd ./concord/build-test/my_bot && make
