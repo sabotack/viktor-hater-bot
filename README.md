@@ -13,8 +13,8 @@ The bot listens for the word 'viktor' in all channels and responds with a roast/
 
 This project was originally created during my free time in the break between my 1st and 2nd semester of Software Engineering at Aalborg University. 
 
-The main point was to practice C-programming while discovering and learning an entire new framework for discord bot development (Orca).
-Along with learning about Orca, I also got familiar with the Discord API and developer portal.
+The main point was to practice C-programming while discovering and learning an entire new framework for discord bot development (Concord).
+Along with learning about Concord, I also got familiar with the Discord API and developer portal.
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
@@ -27,7 +27,7 @@ Along with learning about Orca, I also got familiar with the Discord API and dev
 - [git](https://git-scm.com/)
 - [gcc](https://gcc.gnu.org/)
 - [make](https://www.gnu.org/software/make/)
-- [orca](https://github.com/cee-studio/orca/)
+- [concord](https://github.com/Cogmasters/concord/)
 
 ## Getting started
 ### Installation
@@ -42,6 +42,11 @@ The stability levels are used to indicate program stability, where level #1 indi
 - #3: 48+ hours
 - #4: 96+ hours
 - #5: 168+ hours
+
+* To ignore SIGPIPE errors during runtime, manually disable SIGPIPE as follows:
+```
+(gdb) handle SIGPIPE nostop noprint pass
+```
 
 ## License
 
