@@ -43,7 +43,7 @@ The stability levels are used to indicate program stability, where level #1 indi
 - #4: 96+ hours
 - #5: 168+ hours
 
-\* To ignore SIGPIPE errors during runtime, manually disable SIGPIPE as follows:
+\* To ignore SIGPIPE errors during runtime, manually disable SIGPIPE using 'gdb' as follows:
 ```
 (gdb) handle SIGPIPE nostop noprint pass
 ```
