@@ -7,14 +7,22 @@
 #include <ctype.h>
 #include "discord.h"
 
-#define USER_ID_VIKTOR              136912986605355008
-#define USER_ID_RASMUS              352116555464704001
-#define USER_ID_ALI                 150314037975056384
+#define STR_HELPER(x) #x
+#define STR(x) STR_HELPER(x)
 
+#define BOT_STATUS_MSG              "viktor cry [bot v2.2]"
+
+#define UID_VIKTOR                  136912986605355008
+#define UID_RASMUS                  352116555464704001
+#define UID_ALI                     150314037975056384
+
+#define PING_STR(id)                "<@"STR(id)">"
+
+#define DISCORD_ACTIVITY_WATCHING   3
 #define MESSAGES_FOR_NOT_ASKING     10
-#define RASMUS_ROAST_ID             23
-#define FIRST_ROAST_ID              29
-#define HELP_INIT_NUM               26
+#define MSG_ID_RASMUS               23
+#define MSG_ID_FIRST                29
+#define MSG_ID_HELP_INIT            26
 
 void on_ready(struct discord *client);
 void on_msg_create(struct discord *client, const struct discord_message *msg);
@@ -25,14 +33,14 @@ void on_viktor(struct discord *client, const struct discord_message *msg);
 
 void set_bot_activity(struct discord *client, char *status_message);
 
-bool firstRoast = true;
+bool first_roast = true;
 
-int msgCounter = 0;
-int previousNum = 0;
+int msg_counter = 0;
+int previous_num = 0;
 
-char statusMsg[] = "Hate Viktor v2.0";
+char status_msg[] = BOT_STATUS_MSG;
 
-char *hateComments[] = {
+char *bot_messages[] = {
     "all my homies hate viktor...",
     "i hate viktor",
     "shut up viktor",
@@ -56,9 +64,9 @@ char *hateComments[] = {
     "viktor stop crying",
     "viktor's forehead so big his dreams are in IMAX",
     "viktor is a sniper's dream target",
-    "<@352116555464704001> u have more face to wash every morning",
+    PING_STR(UID_RASMUS)" u have more face to wash every morning",
     "viktor ur hairline looks like the mcdonalds logo",
-    "<@136912986605355008> if i throw a stick will u leave?",
+    PING_STR(UID_VIKTOR)" if i throw a stick will u leave?",
     "Write '!help' for more options",
     "Hello, im Dora. Viktor can you help me find where we asked?",
     "viktor how much for advertising on your billboard?",
@@ -69,8 +77,8 @@ char *hateComments[] = {
 };
 
 int main(void) {
-    sigaction(SIGPIPE, &(struct sigaction){SIG_IGN}, NULL);
-    
+    signal(SIGPIPE, SIG_IGN);
+
     srand(time(NULL));
 
     struct discord *client = discord_config_init("./config.json");
@@ -91,7 +99,7 @@ void on_ready(struct discord *client) {
     log_info("Succesfully connected to Discord as %s#%s!", bot->username, bot->discriminator);
     
     /* Set bot status to custom status message */
-    set_bot_activity(client, statusMsg);
+    set_bot_activity(client, status_msg);
 }
 
 /* This function is called each time the client detects a new message */
@@ -110,26 +118,26 @@ void on_msg_create(struct discord *client, const struct discord_message *msg) {
     if(strstr(message, "viktor") != NULL) {
         on_viktor(client, msg);
     }
-    else if(msg->author->id == USER_ID_VIKTOR) {
+    else if(msg->author->id == UID_VIKTOR) {
         on_viktor_id(client, msg);
     }
     
     /* Handle !help comment reply */
-    if(strcmp(message, "!help") == 0 && previousNum == HELP_INIT_NUM) {
+    if(strcmp(message, "!help") == 0 && previous_num == MSG_ID_HELP_INIT) {
         on_help(client, msg);
     }
 
     free(message);
 }
 
-/* This function is called whenever a user with id USER_ID_VIKTOR sends a message */
+/* This function is called whenever a user with id UID_VIKTOR sends a message */
 void on_viktor_id(struct discord *client, const struct discord_message *msg) {
-    msgCounter++;
+    msg_counter++;
 
-    if(msgCounter >= MESSAGES_FOR_NOT_ASKING) {
-        struct discord_create_message_params params = { .content = "<@136912986605355008> did anyone ask?" };
+    if(msg_counter >= MESSAGES_FOR_NOT_ASKING) {
+        struct discord_create_message_params params = { .content = PING_STR(UID_VIKTOR)" did anyone ask?" };
         discord_create_message(client, msg->channel_id, &params, NULL);
-        msgCounter = 0;
+        msg_counter = 0;
     }
 }
 
@@ -141,31 +149,31 @@ void on_help(struct discord *client, const struct discord_message *msg) {
     log_info("Received: %s", msg->content);
     log_info("Sent '!help' reply");
 
-    previousNum = 0;
+    previous_num = 0;
 }
 
 /* This function is called whenever the message text contains 'viktor' in any form */
 void on_viktor(struct discord *client, const struct discord_message *msg) {
     int randNum = 0, temp = 0, length = 0;
 
-    if(firstRoast) {
-        struct discord_create_message_params params = { .content = hateComments[FIRST_ROAST_ID] };
+    if(first_roast) {
+        struct discord_create_message_params params = { .content = bot_messages[MSG_ID_FIRST] };
         discord_create_message(client, msg->channel_id, &params, NULL);
 
         log_info("Sent first roast");
             
-        previousNum = FIRST_ROAST_ID;
-        firstRoast = false;
+        previous_num = MSG_ID_FIRST;
+        first_roast = false;
     }
     else {
-        length = sizeof(hateComments)/sizeof(hateComments[0]);
+        length = sizeof(bot_messages)/sizeof(bot_messages[0]);
         randNum = rand() % length;
         
         log_info("Received: %s", msg->content);
         log_info("length = %d, random number = %d", length, randNum);
 
         /* If rasmus roast is chosen */
-        if(randNum == RASMUS_ROAST_ID) { 
+        if(randNum == MSG_ID_RASMUS) { 
             /* Generate a new random number to decrease the odds of getting the rasmus roast */
             temp = rand() % 2;
 
@@ -177,10 +185,10 @@ void on_viktor(struct discord *client, const struct discord_message *msg) {
             }
         }
 
-        struct discord_create_message_params params = { .content = hateComments[randNum] };
+        struct discord_create_message_params params = { .content = bot_messages[randNum] };
         discord_create_message(client, msg->channel_id, &params, NULL);
 
-        previousNum = randNum;
+        previous_num = randNum;
     }
 }
 
@@ -191,7 +199,7 @@ void set_bot_activity(struct discord *client, char *status_message) {
         .activities = (struct discord_activity *[]){
             &(struct discord_activity){
                 .name = status_message,
-                .type = DISCORD_ACTIVITY_GAME,
+                .type = DISCORD_ACTIVITY_WATCHING,
             },
             NULL // END OF ACTIVITIES LIST
         },
